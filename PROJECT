@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: kubebuilder-crd1
 repo: github.com/hfbhfb/kubebuilder-crd1
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: crd1.io
+  group: app1
+  kind: Foo
+  path: github.com/hfbhfb/kubebuilder-crd1/api/v1
+  version: v1
 version: "3"
